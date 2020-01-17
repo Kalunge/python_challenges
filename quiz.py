@@ -239,3 +239,25 @@ else:
     print('please enter a valid username')
 
 
+# BUY AIRTIME APPLICATION
+account_balance = 50
+
+airtime = int(input('Enter amount to spend: '))
+
+new_balance = account_balance - airtime
+
+if account_balance > airtime:
+    print(f'you have received {airtime} mbs new balance is {new_balance}')
+else:
+    print(f'you have insufficient funds your balance is {account_balance}')
+
+#two numbers = print the greatest
+
+number_one = int(input('Enter a number to compare: '))
+
+number_two = int(input('Enter number to compare with: '))
+
+if number_one > number_two:
+    print(f'{number_one} is greater then {number_two}')
+else:
+    print(f'{number_two} is greater then {number_one}')
