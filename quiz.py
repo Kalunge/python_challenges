@@ -107,4 +107,135 @@ g = f.replace(')', '')
 print(g)
 
 
+# MILESTONE TASK 
+# Create a class called Payroll whose major task is to calculate an individual’s Net Salary
+#  by getting the inputs basic salary and benefits. Create 5 different class methods which will
+#  calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, grossSalary and netSalary. 
+# NB: Use KRA, NHIF and NSSF values provided in the link below.
+# https://www.aren.co.ke/payroll/taxrates.htm  
+# https://calculator.co.ke/kra-salary-income-tax-paye-calculator
+
+
+
+task_list = [23, 'Jane', ['Lesson 23', 560, {'currency' : 'KES'}], 987, (76,'John')]
+# Determing type of variable in task_list using an inbuilt function
+
+check_type = type(task_list)
+print(task_list)
+
+# Print KES
+
+print(task_list[2][2]['currency'])
+
+# Print 560
+
+print(task_list[2][1])
+
+
+# Use a function to determine the length of taksList
+
+length_task_list = len(task_list)
+print(length_task_list)
+
+# Change 987 to 789 without using an inbuilt -method or Assignment
+
+# FIRST WAY
+task_list[3] = 789
+print(task_list)
+
+# SECOND WAY
+x = task_list[3]
+y = str(x)
+z = y[::-1]
+task_list.insert(3, a)
+
+# Change the name “John” to “Jane” .
+
+task_list[4] = (76, 'Jane')
+print(task_list)
+
+# Check for password length using if else conditional statements
+
+password = input('Enter your Password: ')
+
+if len(password) < 5:
+    print('Password too short')
+elif len(password) > 15:
+    print('Too many characters')
+else:
+    print('Login Successful')
+
+#GRADING SYSTEM
+
+mathematics = int(input('Enter your mathematics results: '))
+
+if mathematics > 100 or mathematics < 0:
+    print('please enter valid marks')
+
+Science = int(input('Enter your science results: '))
+
+if Science > 100 or Science < 0:
+    print('please enter valid marks')
+
+Kiswahili = int(input('Enter your kiswahili results: '))
+
+if Kiswahili > 100 or Kiswahili < 0:
+    print('please enter valid marks')
+
+Social_studies = int(input('Enter your socialstudies results: '))
+
+if Social_studies > 100 or Social_studies < 0:
+    print('please enter valid marks')
+
+English = int(input('Enter your English results: '))
+
+if English > 100 or English < 0:
+    print('please enter valid marks')
+
+
+total_marks = mathematics + Science + Kiswahili + Social_studies + English
+
+# print(total_marks)
+
+
+average = total_marks / 5 
+
+if average <= 100 and average >= 80 :
+    print(f'your average is {average} your grade is  A')
+elif average < 80 and average >=70 :
+    print(f' your average is {average} your grade is B')
+elif average < 70 and average >= 60  :
+    print(f'your average is {average} your grade is C')
+elif average < 50 and average > 0:
+    print('Enter valid mathematics marks')
+else:
+    print('Enter valid marks')
+
+# login to facebook
+# enter your username
+# if true enter your email if true enter password
+# if invald respond 
+
+print('WELCOME TO FACEBOOK LOGIN PAGE')
+
+username = 'Mark'
+email = 'mark@gmail.com'
+password = 123456
+
+
+inputted_username = input('Enter your Username: ')
+
+if inputted_username.capitalize() == username:
+    user_email = input('now Enter your Email: ')
+    if user_email == email:
+        user_password = int(input('Enter your Password: '))
+        if user_password == password:
+            print('Welcome to Facebook')
+        else:
+            print('invalid password')
+    else:
+        print('the email you enter does not exist')
+else:
+    print('please enter a valid username')
+
 
