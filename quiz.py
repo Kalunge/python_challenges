@@ -1,3 +1,4 @@
+# TASK 1
 # Write a program which accepts a string as input to print "Yes" if the string is "yes", "YES" or "Yes", otherwise print "No". 
 # Hint: Use input () to get the persons input
 
@@ -9,6 +10,7 @@ if user_input.upper() == 'YES':
 else:
     print('No')
 
+# TASK2
 
 # Implement a function that takes as input three variables, and returns the largest of the three. Do this 
 # without using the Python max () function!
@@ -25,6 +27,7 @@ def maximum_of_three(a, b, c):
 result = maximum_of_three(15,66,7)
 print(result)
 
+# TASK3
 
 # Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes
 #  a new list of only the first and last
@@ -47,7 +50,7 @@ new_list = my_list[::4]
 
 print(new_list)
 
-
+# TASK 4
 # Ask the user for a number. Depending on whether the number is even or odd,
 #  print out an appropriate message to the user. 
 # Hint: how does an even / odd number react differently when divided by 2?
@@ -72,9 +75,13 @@ elif user_number % 2 == 0:
 else:
     print(f'{user_number} is Odd')
 
+# TASK 5
+
 # With a given tuple (1, 2, 3, 4, 5, 6, 7, 8, 9, 10),
 #  write a program to print the first half values in one line and
 #  the last half values in one line.
+#  sample output => 12345
+#                  678910
 
 # ONE WAY
 
@@ -117,6 +124,7 @@ print(g)
 
 
 
+# Task 6
 task_list = [23, 'Jane', ['Lesson 23', 560, {'currency' : 'KES'}], 987, (76,'John')]
 # Determing type of variable in task_list using an inbuilt function
 
@@ -154,7 +162,11 @@ task_list.insert(3, a)
 task_list[4] = (76, 'Jane')
 print(task_list)
 
+# Task 7
 # Check for password length using if else conditional statements
+# if less than 5 print too short
+# if greater than 15 print too many characters
+# if in between print login successful
 
 password = input('Enter your Password: ')
 
@@ -165,7 +177,11 @@ elif len(password) > 15:
 else:
     print('Login Successful')
 
+# TASK8
 #GRADING SYSTEM
+# create a GRADING SYSTEM
+# ask for students marks in five subjects
+# calculate the average and grade them ABCD depending on their performance
 
 mathematics = int(input('Enter your mathematics results: '))
 
@@ -211,6 +227,7 @@ elif average < 50 and average > 0:
 else:
     print('Enter valid marks')
 
+# TASK 9
 # login to facebook
 # enter your username
 # if true enter your email if true enter password
@@ -238,7 +255,7 @@ if inputted_username.capitalize() == username:
 else:
     print('please enter a valid username')
 
-
+# TASK 10
 # BUY AIRTIME APPLICATION
 account_balance = 50
 
@@ -251,6 +268,7 @@ if account_balance > airtime:
 else:
     print(f'you have insufficient funds your balance is {account_balance}')
 
+# TASK 11
 #two numbers = print the greatest
 
 number_one = int(input('Enter a number to compare: '))
@@ -263,7 +281,7 @@ else:
     print(f'{number_two} is greater then {number_one}')
 
 
-
+# TASK 12
 # 2.A student will not be allowed to sit in exam if his/her attendence is less than 75%.
 # Take following input from user
 # Number of classes held
@@ -293,15 +311,54 @@ else:
         print('Not allowed for the test')
     
 
-
-
 # 3.Modify the above question to allow student to sit if he/she has medical cause. 
 # Ask user if he/she has medical cause or not ( 'Y' or 'N' ) and print accordingly.
 
 
-
+# TASK 13
 # 4.A shop will give discount of 10% if the cost of purchased quantity is more than 1000.
 # Ask user for quantity
 # Suppose, one unit will cost 100.
 # Judge and print total cost for user.
+
+
+quantity = int(input('Enter purchased quantity: '))
+
+total_cost = quantity * 10
+
+if total_cost > 1000:
+    new_total = total_cost * 0.9
+    print(f'your total cost is {new_total}')
+else:
+    print(f'your total cost is {total_cost}')
+
+# TASK 14
+#  Accept two int values from the user and return their product. 
+# If the product is greater than 1000, then return their sum
+
+int_one = int(input('Enter a number: '))
+int_two = int(input('Enter a second number: '))
+
+product = int_one * int_two
+
+if product > 1000:
+    print(int_one + int_two)
+else:
+    print(product)
+
+# TASK 15
+# Write a Python program to check if all dictionaries in a list are empty or not.
+
+# Sample list : [{},{},{}]
+# Return value : True
+# Sample list : [{1,2},{},{}]
+# Return value : False
+
+
+# TASK 16
+# Write a program that prints the numbers 1-100, each on a new line
+# For each number that is a multiple of 3, print “Fizz” instead of the number
+# For each number that is a multiple of 5, print “Buzz” instead of the number
+# For each number that is a multiple of both 3 and 5, print “FizzBuzz” instead of the number
+# Now that you know what you need to write, you can get started!
 
