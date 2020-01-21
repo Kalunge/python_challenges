@@ -360,5 +360,80 @@ else:
 # For each number that is a multiple of 3, print “Fizz” instead of the number
 # For each number that is a multiple of 5, print “Buzz” instead of the number
 # For each number that is a multiple of both 3 and 5, print “FizzBuzz” instead of the number
+# if doesnt fall in any category print the number
 # Now that you know what you need to write, you can get started!
+
+def fizz_buzz(number):
+    for num in range(number + 1):
+        if num % 5 == 0 and num % 3 == 0:
+            print('FizzBuzz')
+        elif num % 5 == 0:
+            print('Buzz')
+        elif num % 3 == 0:
+            print('Fizz')
+        else:
+            print(num)
+
+# TASK 17
+# Ask a user their name
+# If their first name starts with A or B 
+# tell them they go to room AB
+# IF their first name starts with C or D
+# tell them to go to room CD
+# If their first name starts with another letter,
+#  ask for their last name
+# IF their last name starts with Z, 
+# tell them to go to room Z
+# if their last name starts with any other letter,
+# tell them to go to room OTHER
+
+#######################
+# When you are done
+# Anna should be in room AB
+# Bob should be in room AB
+# Charlie should be in room C
+# Khalid Haque should be in room OTHER
+# Xin Zhao should be in room Z
+
+first_name = input('Enter your first name: ')
+
+if first_name[0].upper() in ('A', 'B'):
+    print('Go to room AB')
+elif first_name[0].upper() in ('C', 'D'):
+    print('Go to room CD')
+else:
+    last_name = input('Enter your last name: ')
+    if last_name[0].upper() == 'Z':
+        print('GO TO ROOM Z')
+    else:
+        print('GO TO ROOM OTHER')
+
+# TASK 18
+# use for loop to print odd or even alongside each number 
+nums = [1,2,3,4,5,6,7,8,9,]
+
+for num in  nums:
+    if num % 2 == 0:
+        print(num, 'Is even')
+    else:
+        print(num, 'Is odd')
+
+# TASK 19
+# # print 1-10 using while loop 
+
+i = 1
+
+while i <= 10 :
+    print(i)
+    i += 1
+
+# 10 to 1
+
+a = 10
+
+while a >= 0:
+    print(a)
+    a -= 1
+
+
 
