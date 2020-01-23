@@ -5,7 +5,7 @@
 
 user_input = input('enter your message: ')
 
-if user_input.upper() == 'YES':
+if user_input.capitalize() == 'Yes' or user_input == 'YES' or user_input == 'Yes':
     print('yes') 
 else:
     print('No')
