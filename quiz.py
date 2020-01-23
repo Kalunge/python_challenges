@@ -155,7 +155,7 @@ print(task_list)
 x = task_list[3]
 y = str(x)
 z = y[::-1]
-task_list.insert(3, a)
+task_list.insert(3, z)
 
 # Change the name “John” to “Jane” .
 
@@ -436,4 +436,43 @@ while a >= 0:
     a -= 1
 
 
+
+# TASK 20
+# source = https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php
+# 1. Write a Python program to find those numbers which are divisible by 7 and multiple of 5, 
+# between 1500 and 2700 (both included).
+
+for num in range(1500, 2701):
+    if num % 7 == 0 and num % 5 == 0:
+        print(num)
+
+# A SECOND WAY
+multiples = []
+
+for number in range(1500, 2701):
+    if number % 7 == 0 and number % 5 == 0:
+        multiples.append(str(number))
+
+print(','.join(multiples))
+
+
+# TASK 21
+# 3. Write a Python program to guess a number between 1 to 9.
+# Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears
+#  again until the guess is correct, on successful guess,
+#  user will get a "Well guessed!" message, and the program will exit.
+
+import random
+
+number = random.randint(1,9)
+print(number)
+
+guess_count = 0
+
+while guess_count <= 9 :
+    guess = int(input('Guess a number between 1 and 9: '))
+    if guess == number:
+        print('Congratulations you guessed right')
+        break
+    guess_count +=1
 

@@ -1,8 +1,3 @@
-# source = https://www.w3resource.com/python-exercises/python-conditional-statements-and-loop-exercises.php
-# TASK 1
-# 1. Write a Python program to find those numbers which are divisible by 7 and multiple of 5, 
-# between 1500 and 2700 (both included).
-
 # TASK 2
 # 2. Write a Python program to convert temperatures to and from celsius, fahrenheit.
 # [ Formula : c/5 = f-32/9 [ where c = temperature in celsius and f = temperature in fahrenheit ]
@@ -10,14 +5,37 @@
 # 60°C is 140 in Fahrenheit
 # 45°F is 7 in Celsius
 
+# temp = input('Enter temperatures you wish to convert eg 20C or 5F: ')
 
-# TASK 3
-# 3. Write a Python program to guess a number between 1 to 9.
-# Note : User is prompted to enter a guess. If the user guesses wrong then the prompt appears
-#  again until the guess is correct, on successful guess,
-#  user will get a "Well guessed!" message, and the program will exit.
+# degrees = int(temp[:-1])
+# convention = temp[-1]
+# # print(degrees)
+# # print(convention)
+
+# if convention.upper() == 'C':
+#     result = int((5/9) * (degrees -32))
+#     print(f'{degrees} celcius is {result} fareinheit')
+
+# elif convention.upper() == 'F':
+#     result = 
+
+    
 
 
+# C = (5/9) * (F - 32)
+
+
+
+
+
+
+
+
+
+
+
+
+    
 # TASK 4
 # Write a Python program to construct the following pattern, using a nested for loop.
 
@@ -31,7 +49,20 @@
 # * * 
 # *
 
+mylist = [1,2,3,4,5,4,3,2,1]
 
+for item in mylist:
+    print(item * ' *')
+
+
+n = 5
+for a in range(n):
+    print(a)
+
+for i in range(n):
+    for j in range(i):
+        print('*', end='')
+    print('')
 # TASK 5
 # 5. Write a Python program that accepts a word from the user and reverse it.
 
@@ -41,5 +72,4 @@
 # Expected Output :
 # Number of even numbers : 5
 # Number of odd numbers : 4
-
 

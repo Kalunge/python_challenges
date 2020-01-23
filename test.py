@@ -4,7 +4,7 @@ attempts = 1
 pin = 4040
 
 while attempts <= 3:
-    entered_pin = int(input(f'Enter you sim pin. you have {attempts} remaining: '))
+    entered_pin = int(input(f'Enter you sim pin. '))
     if entered_pin != pin:
         remaining_attempts = 3 - attempts 
         attempts += 1
